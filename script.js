@@ -79,8 +79,8 @@ const checkAnswer = () => {
   checkBtn.disabled = true;
   if (options.querySelector(".selected")) {
     let selectedAnswer = options.querySelector(".selected span").textContent;
-    // if (selectedAnswer === HTMLDecode(correctAnswer)) {
-    if (selectedAnswer === correctAnswer) {
+    if (selectedAnswer === HTMLDecode(correctAnswer)) {
+      //   if (selectedAnswer === correctAnswer) {
       //check here
       correctScore++;
       //   document.querySelector(".quiz-options > li:active").style.background =
@@ -99,10 +99,10 @@ const checkAnswer = () => {
 };
 
 // to convert html entities into normal text of correct answer if there is any
-// const HTMLDecode = (textString) => {
-//   let doc = new DOMParser().parseFromString(textString, "text/html");
-//   return doc.documentElement.textContent;
-// }
+const HTMLDecode = (textString) => {
+  let doc = new DOMParser().parseFromString(textString, "text/html");
+  return doc.documentElement.textContent;
+};
 
 const checkCount = () => {
   askedCount++;
