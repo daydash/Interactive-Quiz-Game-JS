@@ -8,7 +8,8 @@ const totalQuestionCount = document.getElementById("total-question");
 const lifeLineCount = document.getElementById("correct-lifeline");
 
 let correctAnswer = "";
-let correctScore = (askedCount = 0);
+let correctScore = 0;
+let askedCount = 0;
 let totalQuestion = 10;
 let lifeLine = 3;
 
@@ -89,7 +90,7 @@ const checkAnswer = () => {
     } else {
       result.innerHTML = `<p><i class = "fas fa-times"></i>Incorrect Answer!</p> <small><b>Correct Answer: </b>${correctAnswer}</small>`;
       lifeLine--;
-      lifeLineCount.textContent = lifeLine;
+      lifeLineCount.textContent = `${lifeLine}❤️`;
     }
     checkCount();
   } else {

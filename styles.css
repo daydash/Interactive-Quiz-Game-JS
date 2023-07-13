@@ -17,17 +17,17 @@
   justify-content: center;
 }
 body {
-  min-height: 50vh;
+  min-height: 90vh;
+  margin: 0;
   font-family: "Poppins", sans-serif;
   color: var(--dark-color);
   background: var(--grey-color);
 }
 .wrapper {
   background: var(--light-color);
-  padding: 1.5rem 4rem 1.5rem 4rem;
+  padding: 0.5rem 4rem 0.5rem 4rem;
   width: 600px;
-  height: 680px;
-  margin-top: 0.6rem;
+  height: 648px;
   border-top-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
   position: relative;
